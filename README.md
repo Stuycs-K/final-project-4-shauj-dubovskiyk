@@ -1,1 +1,2 @@
-# THIS DOCUMENT IS REQUIRED
+# ECC Encryption
+#### By Jefford Shau & Kosta Dubovskiy
