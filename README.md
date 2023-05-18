@@ -2,7 +2,6 @@
 #### By Jefford Shau & Kosta Dubovskiy
 
 ## Introduction
- - Brief overview of encryption and its importance in cybersecurity
  - Introduction to ECC (Elliptic Curve Cryptography) and its significance in modern cryptography
 ## Fundamentals of ECC Encryption
  - Explaining the mathematical foundations of ECC
