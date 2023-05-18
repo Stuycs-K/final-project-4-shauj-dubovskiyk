@@ -1,1 +1,4 @@
-# This document is required.
+# ECC Encryption
+##### By Jefford S. & Kosta D
+
+## 1. What is 
