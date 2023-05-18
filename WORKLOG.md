@@ -2,9 +2,11 @@
 
 ## GROUP MEMBER 1
 
-### date x
+Jefford Shau
 
-info
+### date 05/17/2023
+
+Research on Elliptic Curve Cryptography. 
 
 ### date y
 
