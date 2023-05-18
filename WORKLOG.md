@@ -15,10 +15,10 @@ info
 
 ## GROUP MEMBER 2
 
-### date x
+### date 05/17/2023
 
-info
+Communicating w/ group, deciding presentation topic, initializing repo
 
-### date y
+### date 05/18/2023
 
-info
+Made lesson plan, put it in readme. 
