@@ -6,13 +6,9 @@ Jefford Shau
 
 ### date 05/17/2023
 
-<<<<<<< HEAD
-Research on Elliptic Curve Diffie-Hellman Cryptography. 
-=======
 Research on Elliptic Curve Cryptography. 
 - https://en.wikipedia.org/wiki/Elliptic-curve_cryptography
 - https://venafi.com/blog/how-does-elliptic-curve-cryptography-work/
->>>>>>> 2ba6efadfec4b5dee7a4e4f684b056d5f6bdbe6c
 
 ### date 05/18/2023
 
