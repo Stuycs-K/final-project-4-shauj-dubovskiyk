@@ -7,10 +7,15 @@ Jefford Shau
 ### date 05/17/2023
 
 Research on Elliptic Curve Cryptography. 
+- https://en.wikipedia.org/wiki/Elliptic-curve_cryptography
+- https://venafi.com/blog/how-does-elliptic-curve-cryptography-work/
 
-### date y
+### date 05/18/2023
 
-info
+Research on Elliptic Curve Cryptography
+- https://www.techtarget.com/searchsecurity/definition/elliptical-curve-cryptography
+- https://www.youtube.com/watch?v=dCvB-mhkT0w
+- https://cryptobook.nakov.com/asymmetric-key-ciphers/elliptic-curve-cryptography-ecc
 
 
 ## GROUP MEMBER 2
