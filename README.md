@@ -1,8 +1,8 @@
-# ECC Encryption
+# Elliptic Curve Diffie-Hellman(ECDH) Encryption
 #### By Jefford Shau & Kosta Dubovskiy
 
 ## Introduction
- - Introduction to ECC (Elliptic Curve Cryptography) and its significance in modern cryptography
+ - Introduction to ECDH (Elliptic Curve Diffie-Hellman cryptography) and its significance in modern cryptography
 ## Fundamentals of ECC Encryption
  - Explaining the mathematical foundations of ECC
  - Understanding elliptic curves and their properties

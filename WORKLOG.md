@@ -6,7 +6,7 @@ Jefford Shau
 
 ### date 05/17/2023
 
-Research on Elliptic Curve Cryptography. 
+Research on Elliptic Curve Diffie-Hellman Cryptography. 
 
 ### date y
 
@@ -25,3 +25,6 @@ Made lesson plan, put it in readme.
 Research - https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/, https://avinetworks.com/glossary/elliptic-curve-cryptography/, https://www.keyfactor.com/blog/elliptic-curve-cryptography-what-is-it-how-does-it-work/
 Putting together presentation.md and made presentation format.
 
+### date 05/19/2023
+
+Research - https://www.youtube.com/watch?v=F3zzNa42-tQ (really useful, point addition, point doubling, easy way to show why you always get a cascading chain not a bouncing back, adding vertical points -- P+Q=point at infinity, point multiplication Q=kP=P+P+...+P, need for a one way function -- finding k such that Q=kP is really hard), https://www.youtube.com/watch?v=dCvB-mhkT0w, 
