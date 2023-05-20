@@ -21,6 +21,10 @@ Research on Elliptic Curve Cryptography
 
 Started on the powerpoint (added google slides link in powerpoint.md)
 
+### date 05/20/2023
+
+Added Dot Operation slides to powerpoint
+
 
 ## GROUP MEMBER 2
 
