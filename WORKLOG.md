@@ -17,6 +17,10 @@ Research on Elliptic Curve Cryptography
 - https://www.youtube.com/watch?v=dCvB-mhkT0w
 - https://cryptobook.nakov.com/asymmetric-key-ciphers/elliptic-curve-cryptography-ecc
 
+### date 05/19/2023
+
+Started on the powerpoint (added google slides link in powerpoint.md)
+
 
 ## GROUP MEMBER 2
 
