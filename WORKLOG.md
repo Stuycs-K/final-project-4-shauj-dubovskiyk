@@ -25,6 +25,11 @@ Started on the powerpoint (added google slides link in powerpoint.md)
 
 Added Dot Operation slides to powerpoint
 
+### date 05/22/2023
+
+Explained keypair generation and parameter G in powerpoint
+Planning to move information on google slides into markdown soon
+
 
 ## GROUP MEMBER 2
 
