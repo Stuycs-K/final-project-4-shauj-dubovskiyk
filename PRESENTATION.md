@@ -1,4 +1,5 @@
 # ECC Encryption
+# Presentation Link: https://docs.google.com/presentation/d/10N4DQfSYqFsY_W3THe2IU6DdcG4LX0SwVRDMNz_rmvQ/edit?usp=sharing
 #### By Jefford Shau & Kosta Dubovskiy
 ## Introduction
  - Introduction to ECC (Elliptic Curve Cryptography) and its significance in modern cryptography
