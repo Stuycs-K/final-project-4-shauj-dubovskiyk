@@ -14,7 +14,7 @@
  - Symmetric about the x-axis
  - Straight lines intersect the curve at no more than 3 points
 
- // image here
+ ![Elliptic Curve](https://github.com/Stuycs-K/final-project-4-shauj-dubovskiyk/blob/main/images/elliptic_curve.png)
 
  ## **Parameter P**
 
