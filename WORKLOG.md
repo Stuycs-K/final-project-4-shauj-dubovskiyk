@@ -28,8 +28,14 @@ Added Dot Operation slides to powerpoint
 ### date 05/22/2023
 
 Explained keypair generation and parameter G in powerpoint
+
+### date 05/23/2023
+
 Planning to move information on google slides into markdown soon
 
+### date 05/24/2023
+
+Moved google slide information to markdown
 
 ## GROUP MEMBER 2
 
