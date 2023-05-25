@@ -37,6 +37,10 @@ Planning to move information on google slides into markdown soon
 
 Moved google slide information to markdown
 
+### date 05/25/2023
+
+Added to advantages and disadvantages in persentation.md
+
 ## GROUP MEMBER 2
 
 ### date 05/17/2023
