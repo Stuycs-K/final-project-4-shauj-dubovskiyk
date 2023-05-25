@@ -46,10 +46,15 @@ Putting together presentation.md and made presentation format.
 
 Research - https://www.youtube.com/watch?v=F3zzNa42-tQ (really useful, point addition, point doubling, easy way to show why you always get a cascading chain not a bouncing back, adding vertical points -- P+Q=point at infinity, point multiplication Q=kP=P+P+...+P, need for a one way function -- finding k such that Q=kP is really hard), https://www.youtube.com/watch?v=dCvB-mhkT0w, 
 
-### date 05/20/2023
+### date 05/22/2023
 
 Research https://www.youtube.com/watch?v=vnpZXJL6QCQ, watched a lot of the lecture trying to understand mod p aspect. Considered switching topic, Hill Cipher etc.
 
-### date 05/21/2023
+### date 05/23/2023
 
 Figured out how to implement simple decode encode.
+
+
+### date 05/24/2023
+
+Researching and understanding mod p aspect of ECC. https://math.mit.edu/classes/18.783/2015/Lecture1.pdf resource.
