@@ -149,7 +149,7 @@ Step | Alice| Mutual | Bob
      - Carefully selected public key not on the ECC curve causes a shared key that is easily reversible to be generated
      - Leaks the victim's private key
  - Speculation the National Security Agency (NSA) added a backdoor as an ECC standard
-     - Flaws in random number generators make secret keys easy to predict
+     - Flaws and leaked seeds in random number generators make "random" numbers easy to predict
 
 ---
 ## **Conclusion**
