@@ -91,12 +91,12 @@ Step | Alice| Mutual | Bob
 
 ## **Advantages of ECC Encryption**
 
- - Creates keys using less computation power and battery power than Rivest–Shamir–Adleman (RSA) encryption
- - Reduced key size compared to RSA encryption results in less storage used
- - Stronger algorithm than Diffie-Hellman and RSA encryption
+ - Creates keys using less computation power, battery power than Rivest–Shamir–Adleman (RSA) encryption
+ - Faster generation of keys
+ - Smaller keys, ciphertext, and signatures size compared to RSA encryption results in less memory storage used
      - 256-bit elliptic curve key provides same level of security as 3072-bit RSA key
  - Used often for mobile devices
-     - Heavy computational factoring algorithms in RSA encryption not ideal for mobile devices
+     - Heavy computational factoring algorithms are not ideal for mobile devices
 
 ---
 
@@ -107,7 +107,7 @@ Step | Alice| Mutual | Bob
  - The Onion Router (Tor)
     - Open-source software for anonymous communication
  - Proving Bitcoin Ownership
- - Apple’s iMessage signatures and other digital signatures
+ - Apple’s iMessage signatures and other digital signatures such as PDFs
  - VPNs tunnel authentication and key exchange
     - OpenVPN
  - SSH Keys
@@ -119,6 +119,7 @@ Step | Alice| Mutual | Bob
  - Transport Layer Security (TLS)
     - Ensures the secure delivery of data over the Internet
     - Avoids possible eavesdropping and alteration of content
+ - Internet Key Exchange (IKE)
  - One-way encryption of emails, data, and software
  - Mobile providers
 
@@ -128,17 +129,27 @@ Step | Alice| Mutual | Bob
 
 // insert here
 
-## **Concerns of ECC Encryption**
+## **Disadvantages of ECC Encryption**
 
-Most Elliptic Curves are Patented
-Theoretical Solution
-No algorithmic solution in the last three decades yet
-Quantum Computing Attacks
-Bad RNG leads to successful attacks
-
-## **Why ECC is Not Commonly Used**
-
-// insert here
+ - Hard to implement
+     - ECC private keys can be leaked when not implemented correctly
+ - Relatively new technology compared to RSA
+ - Most Elliptic Curves are Patented
+     - Legal risk
+ - Possible Quantum Computing Attacks
+     - Shor's algorithm makes factoring easier
+     - Grover's algorithm makes searching through unstructured data easier
+     - ECC easier to crack than RSA due to shorter key lengths
+ - Bad RNG leads to successful attacks
+ - Side-channel attacks
+     - Exploiting and analyzing information leaking from physical and virtual cryptoystems
+         - Information to analyze: execution time, power consumption, supply curent, electromanetic and acoustic emissions
+     - Ex: Observing differences in time between power consumption peaks with an oscilloscope
+ - Twist-security attacks
+     - Carefully selected public key not on the ECC curve causes a shared key that is easily reversible to be generated
+     - Leaks the victim's private key
+ - Speculation the National Security Agency (NSA) added a backdoor as an ECC standard
+     - Flaws in random number generators make secret keys easy to predict
 
 ---
 ## **Conclusion**
