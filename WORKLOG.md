@@ -68,3 +68,7 @@ Figured out how to implement simple decode encode.
 ### date 05/24/2023
 
 Researching and understanding mod p aspect of ECC. https://math.mit.edu/classes/18.783/2015/Lecture1.pdf resource.
+
+### date 05/25/2023
+
+Worked on RSA assignment, spent in-class work time on understanding mod p still. Really complicated topic, includes finite fields and mapping.
