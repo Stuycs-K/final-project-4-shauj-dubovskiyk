@@ -34,18 +34,18 @@
         - yG = Red
 
 ## Point Addition
-- If a line intersects two points P and Q, it intersects one other point on the curve at -R
+- If a line intersects two points P and Q, it intersects only one other point on the curve at -R
 - Geometric Approach
     - Let P = (x1, y1) and Q = (x2, y2)
-    - Draw a straight line PQ intersects the curve at -R (x3, -y3)
-    - Reflection point -R across the x-axis resulting in point R (x3, y3)
-    - P + Q = R
+    - Draw a straight line PQ intersecting the curve at R (x3, y3)
+    - Reflection point R across the x-axis resulting in point -R (x3, -y3)
+    - P + Q = -R
 - Point Multiplication
     - Repeated point addition
     - nP = P + P + P + … (n+1) operations
 
 ## Point Doubling
-- If a line is tangent to the curve, it intersects one other point on the curve at -R
+- If a line is tangent to the curve, it intersects only one other point on the curve at -R
 - Geometric Approach
     - Let P = (x1, y1) and P = Q
     - Draw a tangent line that intersects the curve at point P
