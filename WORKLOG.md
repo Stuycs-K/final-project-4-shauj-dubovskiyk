@@ -72,3 +72,6 @@ Researching and understanding mod p aspect of ECC. https://math.mit.edu/classes/
 ### date 05/25/2023
 
 Worked on RSA assignment, spent in-class work time on understanding mod p still. Really complicated topic, includes finite fields and mapping.
+
+### date 05/26/2023
+Understood parameter G and parameter P, finally. https://www.khanacademy.org/computing/computer-science/cryptography/modern-crypt/v/diffie-hellman-key-exchange-part-2 https://cryptobook.nakov.com/asymmetric-key-ciphers/elliptic-curve-cryptography-ecc
