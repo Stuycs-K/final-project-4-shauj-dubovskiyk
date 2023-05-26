@@ -35,33 +35,36 @@
 
 ## Point Addition
 - If a line intersects two points P and Q, it intersects only one other point on the curve at -R
-- Geometric Approach
-    - Let P = (x1, y1) and Q = (x2, y2)
-    - Draw a straight line PQ intersecting the curve at R (x3, y3)
-    - Reflection point R across the x-axis resulting in point -R (x3, -y3)
-    - P + Q = -R
-- Point Multiplication
-    - Repeated point addition
-    - nP = P + P + P + … (n+1) operations
+ - Geometric Approach
+     - Let P = (x1, y1) and Q = (x2, y2)
+     - Draw a straight line PQ intersecting the curve at R (x3, y3)
+     - Reflection point R across the x-axis resulting in point -R (x3, -y3)
+     - P + Q = -R
+ - Point Multiplication
+     - Repeated point addition
+     - nP = P + P + P + … (n+1) operations
+ - Special Cases
+     - P = 0 or Q = 0 (identity element)
+         - P + 0 = P and 0 + Q = Q for any P and Q
+     - P = -Q (vertical line)
+         - Does not intersect any third point
+         P + Q = P + (-P) = 0 (identity element)
+     - 
+
 
 ## Point Doubling
-- If a line is tangent to the curve, it intersects only one other point on the curve at -R
-- Geometric Approach
+ - If a line is tangent to the curve, it intersects only one other point on the curve at -R
+ - Geometric Approach
     - Let P = (x1, y1) and P = Q
     - Draw a tangent line that intersects the curve at point P
     - The line intersects exactly one other point on the curve at point R (x3, y3)
     - Reflection point -R across the x-axis resulting in point -R (x3, -y3)
     - 2P = R
 
-## Special Case: Point at Infinity
-- If the tangent line to the curve at point P is vertical, it intersects the curve at -P 
-- Geometric Approach
-    - Let P = (x1, y1) and P = Q
-    - Draw a vertical tangent line that intersects the curve at point -P
-    - Reflection point P across the x-axis resulting in point -P (x1, -y1)
 
-
-## Point Negation
+## Other Properties
+ - Point Negation
+ - Point at Infinity
 
 // insert here
 

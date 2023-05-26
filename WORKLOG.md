@@ -41,6 +41,10 @@ Moved google slide information to markdown
 
 Added to advantages and disadvantages in persentation.md
 
+### date 05/26/2023
+
+Worked together to understand parameter P and ECC Diffie-Hellman Key Exchange in class
+
 ## GROUP MEMBER 2
 
 ### date 05/17/2023
