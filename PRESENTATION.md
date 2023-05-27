@@ -1,26 +1,29 @@
-# **Cybersecurity ECC Encryption**
-#### By Jefford Shau & Kosta Dubovskiy
----
-## **What is Elliptic Curve Cryptography (ECC) Encryption?**
+ # **Cybersecurity ECC Encryption**
+ #### By Jefford Shau & Kosta Dubovskiy
+
+ ---
+
+ ## **What is Elliptic Curve Cryptography (ECC) Encryption?**
+
  - Public key encryption technique based on the elliptic curve theory
  - Trapdoor One-Way Function
      - Easy to encode but difficult to decode
 
----
-## **Fundamentals of ECC Encryption:**
+ ---
 
-## **Characteristics of Elliptic Curves**
+ ## **Characteristics of Elliptic Curves**
+
  - Set of points that satisfy the equation y²=x³+ax+b
  - Symmetric about the x-axis
  - Straight lines intersect the curve at no more than 3 points
 
  ![Elliptic Curve](https://github.com/Stuycs-K/final-project-4-shauj-dubovskiyk/blob/main/images/elliptic_curve.png)
 
- ## **Parameter P**
+ ### **Parameter P**
 
  // something about mod
 
- ## **Parameter G**
+ ### **Parameter G**
 
  - Predetermined point (xG, yG) on the curve that everyone uses to compute other points on the curve
  - Starting point/base point
@@ -33,26 +36,26 @@
         - xG = Blue
         - yG = Red
 
-## Point Addition
-- If a line intersects two points P and Q, it intersects only one other point on the curve at -R
+ ## **Dot Operations**
+
+ ### **Point Addition**
+ - If a line intersects two points P and Q, it intersects only one other point on the curve at -R
  - Geometric Approach
      - Let P = (x1, y1) and Q = (x2, y2)
      - Draw a straight line PQ intersecting the curve at R (x3, y3)
      - Reflection point R across the x-axis resulting in point -R (x3, -y3)
      - P + Q = -R
- - Point Multiplication
-     - Repeated point addition
-     - nP = P + P + P + … (n+1) operations
  - Special Cases
+     - P = -Q (vertical line point negation)
+         - Does not intersect any third point
+         P + Q = P + (-P) = 0 (point at infinity)
      - P = 0 or Q = 0 (identity element)
          - P + 0 = P and 0 + Q = Q for any P and Q
-     - P = -Q (vertical line)
-         - Does not intersect any third point
-         P + Q = P + (-P) = 0 (identity element)
-     - 
+     - P ≠ Q and no third point R
+         - If P is the point of tangency, then P + Q = -P
 
-
-## Point Doubling
+ ### **Point Doubling** 
+ - Special case of point addition that occurs very frequently
  - If a line is tangent to the curve, it intersects only one other point on the curve at -R
  - Geometric Approach
     - Let P = (x1, y1) and P = Q
@@ -61,26 +64,27 @@
     - Reflection point -R across the x-axis resulting in point -R (x3, -y3)
     - 2P = R
 
+ ### **Point Multiplication**
+ - Repeated Point Addition
+     - nP = P + P + P + … *(n times)*
+     - If *n* has *k* binary digits, then the time complexity would be O(2<sup>k</sup>)
+ - Double and Add Algorithm
+     1. Convert *n* from decimal to binary representation
+     2. 
 
-## Other Properties
- - Point Negation
- - Point at Infinity
 
-// insert here
 
----
+ ---
 
-## **Public and Private Keys**
-- Q = nG
+ ## **Public and Private Keys**
+ - Q = nG
     - Q: public key coordinates (x, y)
     - n: private key (large integer)
     - G: parameter G, generator key (x, y)
-- Key Operations Ladder (right to left)
-- “0” bit - double points
-- “1” bit - add and double points
-
-## **Diffie-Hellman Key Exchange**
-
+ - Key Operations Ladder (right to left)
+ - “0” bit - double points
+ - “1” bit - add and double points
+ ## **Diffie-Hellman Key Exchange**
 Step | Alice| Mutual | Bob
 --- | --- | :---: | ---
 1 | _ | Decide on parameter G privately | _
