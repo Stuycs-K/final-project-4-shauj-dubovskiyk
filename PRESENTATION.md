@@ -13,7 +13,10 @@
 
  ## **Characteristics of Elliptic Curves**
 
- - Set of points that satisfy the equation y²=x³+ax+b
+ - Set of points that satisfy the equation y² = x³ + ax + b
+ - 4a³ + 27b² ≠ 0 
+     - Results in a singular curve with discriminant = 0 that is easy to solve
+     - Graph has cusps, nodes (self-intersections), or acnodes (isolated points)
  - Symmetric about the x-axis
  - Straight lines intersect the curve at no more than 3 points
 
@@ -21,7 +24,8 @@
 
  ### **Parameter P**
 
- // something about mod
+ - For every *x* value, there are at most **2** points
+ - Graph has symmetry about y = *p*/2
 
  ### **Parameter G**
 
@@ -30,7 +34,7 @@
  - Displayed in two ways:
     - Compressed form (only x-coordinate is stored)
         - xG = 79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B (Prefix 02)
-        - yG = (xG + 7)^(½)
+        - yG = (xG + 7)<sup>1/2</sup>
     - Uncompressed form (stores both x-coordinate and y-coordinate)
         - <span style="background-color: #191970">79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B 16F81798</span> <span style="background-color: #FF0000">483ADA77 26A3C465 5DA4FBFC 0E1108A8 FD17B448 A6855419 9C47D08F FB10D4B8</span> (Prefix 04)
         - xG = Blue
@@ -67,24 +71,26 @@
  ### **Point Multiplication**
  - Repeated Point Addition
      - nP = P + P + P + … *(n times)*
-     - If *n* has *k* binary digits, then the time complexity would be O(2<sup>k</sup>)
- - Double and Add Algorithm
+     - If *n* has *k* binary digits, then the time complexity would be *O*(2<sup>k</sup>)
+         - Faster algorithms exist
+ - Scalar Multiplication (Double and Add Algorithm)
      1. Convert *n* from decimal to binary representation
-     2. 
-
-
+     2. Take *P* and starting with the least significant digit (big endian right to left): 
+         - “0” bit - double *P*
+         - “1” bit - double and add *P*
+     - If point addition and doubling are both *O*(1) operations, the double and add algorithm is *O*(log<sub>2</sub> *n*) 
 
  ---
 
  ## **Public and Private Keys**
+
  - Q = nG
     - Q: public key coordinates (x, y)
     - n: private key (large integer)
     - G: parameter G, generator key (x, y)
- - Key Operations Ladder (right to left)
- - “0” bit - double points
- - “1” bit - add and double points
+
  ## **Diffie-Hellman Key Exchange**
+
 Step | Alice| Mutual | Bob
 --- | --- | :---: | ---
 1 | _ | Decide on parameter G privately | _
