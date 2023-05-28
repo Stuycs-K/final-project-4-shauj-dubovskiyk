@@ -13,32 +13,14 @@
 
  ## **Characteristics of Elliptic Curves**
 
- - Set of points that satisfy the equation y² = x³ + ax + b
- - 4a³ + 27b² ≠ 0 
+ - Set of points that satisfy the equation y² = x³ + *a*x + *b*
+ - 4*a*³ + 27*b*² ≠ 0 
      - Results in a singular curve with discriminant = 0 that is easy to solve
      - Graph has cusps, nodes (self-intersections), or acnodes (isolated points)
  - Symmetric about the x-axis
  - Straight lines intersect the curve at no more than 3 points
 
  ![Elliptic Curve](https://github.com/Stuycs-K/final-project-4-shauj-dubovskiyk/blob/main/images/elliptic_curve.png)
-
- ### **Parameter P**
-
- - For every *x* value, there are at most **2** points
- - Graph has symmetry about y = *p*/2
-
- ### **Parameter G**
-
- - Predetermined point (xG, yG) on the curve that everyone uses to compute other points on the curve
- - Starting point/base point
- - Displayed in two ways:
-    - Compressed form (only x-coordinate is stored)
-        - xG = 79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B (Prefix 02)
-        - yG = (xG + 7)<sup>1/2</sup>
-    - Uncompressed form (stores both x-coordinate and y-coordinate)
-        - <span style="background-color: #191970">79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B 16F81798</span> <span style="background-color: #FF0000">483ADA77 26A3C465 5DA4FBFC 0E1108A8 FD17B448 A6855419 9C47D08F FB10D4B8</span> (Prefix 04)
-        - xG = Blue
-        - yG = Red
 
  ## **Dot Operations**
 
@@ -82,6 +64,31 @@
 
  ---
 
+ ## **Domain Parameters**
+
+ ### **Parameter P**
+
+ - Used in the expression y² = x³ + *a*x + *b* mod *p* to create finite fields with domain 0 to *p*-1
+ For every *x* value, there are at most **2** points
+ - Graph has symmetry about y = *p*/2
+ - The set of multiples of *P* is a cyclic subgroup formed by the elliptic curve
+     - Important concept for Elliptic Curve Diffie-Hellman (ECDH)
+
+ ### **Parameter G**
+
+ - Predetermined point (xG, yG) on the curve that everyone uses to compute other points on the curve
+ - Starting point/base point
+ - Displayed in two ways:
+    - Compressed form (only x-coordinate is stored)
+        - xG = 79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B (Prefix 02)
+        - yG = (xG + 7)<sup>1/2</sup>
+    - Uncompressed form (stores both x-coordinate and y-coordinate)
+        - <span style="background-color: #191970">79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B 16F81798</span> <span style="background-color: #FF0000">483ADA77 26A3C465 5DA4FBFC 0E1108A8 FD17B448 A6855419 9C47D08F FB10D4B8</span> (Prefix 04)
+        - xG = Blue
+        - yG = Red
+
+ ---
+
  ## **Public and Private Keys**
 
  - Q = nG
@@ -91,18 +98,18 @@
 
  ## **Diffie-Hellman Key Exchange**
 
-Step | Alice| Mutual | Bob
---- | --- | :---: | ---
-1 | _ | Decide on parameter G privately | _
-2 | Private key: A | _ | Private key: B
-3 | Public key: A * G | _ |Public key: B * G
-4 | _ | Exchange public keys and multiply keys by their own private keys | _ 
-5 | Shared encrypt/decrypt key:    A * (B * G)	| _ | Shared encrypt/decrypt key:     B * (A * G)
-- Hackers may intercept public keys but difficult to determine private keys
-
----
-
-## **Advantages of ECC Encryption**
+ Step | Alice| Mutual | Bob
+ --- | --- | :---: | ---
+ 1 | _ | Decide on parameter G privately | _
+ 2 | Private key: A | _ | Private key: B
+ 3 | Public key: A * G | _ |Public key: B * G
+ 4 | _ | Exchange public keys and multiply keys by their own private keys | _ 
+ 5 | Shared encrypt/decrypt key:    A * (B * G)	| _ | Shared encrypt/decrypt key:     B * (A * G)
+ - Hackers may intercept public keys but difficult to determine private keys
+ 
+ ---
+ 
+ ## **Advantages of ECC Encryption**
 
  - Creates keys using less computation power, battery power than Rivest–Shamir–Adleman (RSA) encryption
  - Faster generation of keys
@@ -111,9 +118,9 @@ Step | Alice| Mutual | Bob
  - Used often for mobile devices
      - Heavy computational factoring algorithms are not ideal for mobile devices
 
----
+ ---
 
-## Real-World Applications of ECC
+ ## Real-World Applications of ECC
 
  - Protect confidential government information by the US Government
     - 300+ bit key sizes
@@ -136,13 +143,13 @@ Step | Alice| Mutual | Bob
  - One-way encryption of emails, data, and software
  - Mobile providers
 
----
+ ---
 
-## **Implementing ECC Encryption**
+ ## **Implementing ECC Encryption**
 
-// insert here
+ // insert here
 
-## **Disadvantages of ECC Encryption**
+ ## **Disadvantages of ECC Encryption**
 
  - Hard to implement
      - ECC private keys can be leaked when not implemented correctly
@@ -163,13 +170,13 @@ Step | Alice| Mutual | Bob
      - Leaks the victim's private key
  - Speculation the National Security Agency (NSA) added a backdoor as an ECC standard
      - Flaws and leaked seeds in random number generators make "random" numbers easy to predict
+ 
+ ---
+ ## **Conclusion**
+ 
+ // insert here
 
----
-## **Conclusion**
+ ## **Homework**
 
-// insert here
-
-## **Homework**
-
-// insert here
+ // insert here
 

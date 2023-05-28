@@ -45,6 +45,11 @@ Added to advantages and disadvantages in persentation.md
 
 Worked together to understand parameter P and ECC Diffie-Hellman Key Exchange in class
 
+### date 05/27/2023
+
+Researched on modulus P https://andrea.corbellini.name/2015/05/23/elliptic-curve-cryptography-finite-fields-and-discrete-logarithms/ 
+Updated more information in presentation.md
+
 ## GROUP MEMBER 2
 
 ### date 05/17/2023
