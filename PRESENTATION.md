@@ -68,7 +68,7 @@
 
  ### **Parameter P**
 
- - Used in the expression y² = x³ + *a*x + *b* mod *p* to create finite fields with domain 0 to *p*-1
+ - Used in the expression y² = x³ + *a*x + *b* mod *p* to create a finite field(denoted F<sub>p</sub>) with domain 0 to *p*-1
  For every *x* value, there are at most **2** points
  - Graph has symmetry about y = *p*/2
  - The set of multiples of *P* is a cyclic subgroup formed by the elliptic curve
