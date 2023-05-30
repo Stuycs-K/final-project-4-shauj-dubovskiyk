@@ -68,11 +68,25 @@
 
  ### **Parameter P**
 
- - Used in the expression y² = x³ + *a*x + *b* mod *p* to create a finite field(denoted F<sub>p</sub>) with domain 0 to *p*-1
- For every *x* value, there are at most **2** points
+ - Used in the expression y² = x³ + *a*x + *b* mod *p* to create a finite field(denoted F<sub>p</sub>, or Z/*p*) with domain 0 to *p*-1
+ For every *x* value, there are at most **2** points — ± (x³ + *a*x + *b* mod *p*) 
  - Graph has symmetry about y = *p*/2
- - The set of multiples of *P* is a cyclic subgroup formed by the elliptic curve
+ - The set of multiples of *p* is a cyclic subgroup formed by the elliptic curve
      - Important concept for Elliptic Curve Diffie-Hellman (ECDH)
+
+#### **A Note On Finite Fields**
+- In fields we have two binary operations: 
+  - addition (+) 
+  - multiplication (·)
+- Both are closed, associative and commutative
+- For both operations, there exist:
+  - A unique identity element
+  - A unique inverse element
+-  Finally, multiplication is distributive over the addition
+
+<u>Note</u>
+- Note that the requirement for *p* to be prime is important!!
+- The set of integers mod 4 is not a fields: for example, 2 has no multiplicative inverse(no solutions to 2 * x ≡ 1 mod 4)
 
  ### **Parameter G**
 
