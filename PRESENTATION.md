@@ -159,10 +159,6 @@
 
  ---
 
- ## **Implementing ECC Encryption**
-
- // insert here
-
  ## **Disadvantages of ECC Encryption**
 
  - Hard to implement
@@ -186,11 +182,8 @@
      - Flaws and leaked seeds in random number generators make "random" numbers easy to predict
  
  ---
- ## **Conclusion**
- 
- // insert here
 
  ## **Homework**
 
- // insert here
+ Code your own point addition and point doubling!
 
