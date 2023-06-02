@@ -70,7 +70,7 @@
 
  - Used in the expression y² = x³ + *a*x + *b* mod *p* to create a finite field(denoted F<sub>p</sub>, or Z/*p*) with domain 0 to *p*-1
  For every *x* value, there are at most **2** points — ± (x³ + *a*x + *b* mod *p*) 
- - Graph has symmetry about y = *p*/2
+ - Graph has symmetry about y = *p* / 2
  - The set of multiples of *p* is a cyclic subgroup formed by the elliptic curve
      - Important concept for Elliptic Curve Diffie-Hellman (ECDH)
 
@@ -159,10 +159,6 @@
 
  ---
 
- ## **Implementing ECC Encryption**
-
- // insert here
-
  ## **Disadvantages of ECC Encryption**
 
  - Hard to implement
@@ -186,11 +182,8 @@
      - Flaws and leaked seeds in random number generators make "random" numbers easy to predict
  
  ---
- ## **Conclusion**
- 
- // insert here
 
  ## **Homework**
 
- // insert here
+ Code your own point addition and point doubling!
 

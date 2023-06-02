@@ -50,7 +50,13 @@ Worked together to understand parameter P and ECC Diffie-Hellman Key Exchange in
 Researched on modulus P https://andrea.corbellini.name/2015/05/23/elliptic-curve-cryptography-finite-fields-and-discrete-logarithms/ 
 Updated more information in presentation.md
 
+### date 05/30/2023
+
+Finished merge for presentation.md
+
 ## GROUP MEMBER 2
+
+Kosta Dubovskiyk
 
 ### date 05/17/2023
 Communicating w/ group, deciding presentation topic, initializing repo
