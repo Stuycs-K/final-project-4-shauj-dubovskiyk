@@ -84,3 +84,9 @@ Worked on RSA assignment, spent in-class work time on understanding mod p still.
 
 ### date 05/26/2023
 Understood parameter G and parameter P, finally. https://www.khanacademy.org/computing/computer-science/cryptography/modern-crypt/v/diffie-hellman-key-exchange-part-2 https://cryptobook.nakov.com/asymmetric-key-ciphers/elliptic-curve-cryptography-ecc
+
+### date 05/29/2023
+Created/modified mod P slide, extended it a lot to include finite fields.
+
+### date 06/01/2023
+Created basic Homework.md file in case it is in fact due tonight.
