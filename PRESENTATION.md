@@ -114,7 +114,7 @@
 
  Step | Alice| Mutual | Bob
  --- | --- | :---: | ---
- 1 | _ | Decide on parameter G privately | _
+ 1 | _ | Decide on parameter G privately(RSA, etc.) | _
  2 | Private key: A | _ | Private key: B
  3 | Public key: A * G | _ |Public key: B * G
  4 | _ | Exchange public keys and multiply keys by their own private keys | _ 
