@@ -28,4 +28,6 @@ Here's an overview of the inforamtion we've compiled in our PRESENTATION.md
  - Backdoor speculation
 ## Homework
  - Homework for the audience: implement your own point addition/multiplication algorithm in Python, and test it.
-
+## Links
+![PRESENTATION](https://github.com/Stuycs-K/final-project-4-shauj-dubovskiyk/blob/main/PRESENTATION.md)
+![HOMEWORK](https://github.com/Stuycs-K/final-project-4-shauj-dubovskiyk/blob/main/HOMEWORK.md)
