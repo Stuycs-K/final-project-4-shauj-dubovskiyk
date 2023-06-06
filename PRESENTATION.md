@@ -119,7 +119,7 @@
 
  Step | Alice| Mutual | Bob
  --- | --- | :---: | ---
- 1 | _ | Decide on parameter G privately(RSA, etc.) | _
+ 1 | _ | Decide on parameter G public | _
  2 | Private key: A | _ | Private key: B
  3 | Public key: A * G | (* here is point multiplication, it's still very hard for bad actors to get A or B) |Public key: B * G
  4 | _ | Exchange public keys(open their "trapdoors") and multiply keys by their own private keys | _ 
