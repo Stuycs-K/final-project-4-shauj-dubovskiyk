@@ -27,33 +27,37 @@
  ### **Point Addition**
  - If a line intersects two points P and Q, it intersects only one other point on the curve at -R
  - Geometric Approach
-     - Let P = (x1, y1) and Q = (x2, y2)
-     - Draw a straight line PQ intersecting the curve at R (x3, y3)
-     - Reflection point R across the x-axis resulting in point -R (x3, -y3)
-     - P + Q = -R
+     - Let P = (x1, y1), Q = (x2, y2), and P ≠ Q
+     - Draw a straight line PQ intersecting the curve at -R (x3, -y3)
+     - Reflection point R across the x-axis resulting in point R (x3, y3)
+     - P + Q = R
  - Special Cases
-     - P = -Q (vertical line point negation)
+     - P = -Q (vertical line)
+         - x1 = x2 and y1 ≠ y2
          - Does not intersect any third point
-         P + Q = P + (-P) = 0 (point at infinity)
-     - P = 0 or Q = 0 (identity element)
-         - P + 0 = P and 0 + Q = Q for any P and Q
+         P + Q = (-Q) + Q = O (point at infinity)
+     - P = O or Q = O (identity element)
+         - P + O = P and O + Q = Q for any P and Q
      - P ≠ Q and no third point R
          - If P is the point of tangency, then P + Q = -P
 
  ### **Point Doubling** 
- - Special case of point addition that occurs very frequently
- - If a line is tangent to the curve, it intersects only one other point on the curve at -R
+ - If a line is tangent to the curve, it intersects only one other point on the curve at R
  - Geometric Approach
     - Let P = (x1, y1) and P = Q
     - Draw a tangent line that intersects the curve at point P
-    - The line intersects exactly one other point on the curve at point R (x3, y3)
-    - Reflection point -R across the x-axis resulting in point -R (x3, -y3)
+    - The line intersects exactly one other point on the curve at point -R (x3, -y3)
+    - Reflection point -R across the x-axis resulting in point R (x3, y3)
     - 2P = R
+ - Special Cases
+     - P = O or y = 0 (vertical line)
+         - Does not intersect any third point
+         2P = 2(O) = O (point at infinity)
 
  ### **Point Multiplication**
  - Repeated Point Addition
      - nP = P + P + P + … *(n times)*
-     - If *n* has *k* binary digits, then the time complexity would be *O*(2<sup>k</sup>)
+     - If *n* has *k* binary digits, then the time complexity would be *O*(*n*)
          - Faster algorithms exist
  - Scalar Multiplication (Double and Add Algorithm)
      1. Convert *n* from decimal to binary representation
@@ -92,6 +96,7 @@
 
  - Predetermined point (xG, yG) on the curve that everyone uses to compute other points on the curve
  - Starting point/base point
+ - Forms a cyclical group with order *n* through point addition
  - Displayed in two ways:
     - Compressed form (only x-coordinate is stored)
         - xG = 79BE667E F9DCBBAC 55A06295 CE870B07 029BFCDB 2DCE28D9 59F2815B (Prefix 02)
@@ -105,9 +110,9 @@
 
  ## **Public and Private Keys**
 
- - Q = nG
+ - Q = kG
     - Q: public key coordinates (x, y)
-    - n: private key (large integer)
+    - k: private key (large integer)
     - G: parameter G, generator key (x, y)
 
  ## **Diffie-Hellman Key Exchange**
@@ -120,6 +125,7 @@
  4 | _ | Exchange public keys(open their "trapdoors") and multiply keys by their own private keys | _ 
  5 | Shared encrypt/decrypt key:    A * (B * G)	| _ | Shared encrypt/decrypt key:     B * (A * G)
  - Hackers may intercept public keys but difficult to determine private keys
+ - A and B are integers between 1 to order *n* - 1 inclusive
  
  ---
  
@@ -185,5 +191,5 @@
 
  ## **Homework**
 
- Code your own point addition and point doubling!
+ Code your own point addition and point doubling(optional)!
 
