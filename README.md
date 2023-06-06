@@ -1,6 +1,10 @@
 # Elliptic Curve Diffie-Hellman(ECDH) Encryption
 #### By Jefford Shau & Kosta Dubovskiy
 
+What we've done in this project is create a high-level introduction to Elliptic Curve Encryption(ECC), the key exchange protocol from Elliptic Curve Diffie-Hellman(ECDH), and an overview of the mathematical foundations of this type of encryption. We've also sourced a succinct python tool for generating encryption key pairs.
+
+Here's an overview of the inforamtion we've compiled in our PRESENTATION.md
+
 ## Introduction
  - Introduction to ECDH (Elliptic Curve Diffie-Hellman cryptography) and its significance in modern cryptography
 ## Fundamentals of ECC Encryption
@@ -19,7 +23,7 @@
  - Key Management: Discussing best practices for ECC key generation, storage, and distribution
  - Integration Challenges: Addressing potential challenges and considerations when implementing ECC in various systems and applications
  - Future Outlook: Discussing ongoing research and advancements in ECC to meet evolving security requirements
- - Homework for the audience: implement your own ECC encryption/decryption algorithm in Python.
+ - Homework for the audience: implement your own point addition/multiplication algorithm in Python, and test it.
 ## Conclusion
  - Recap of the key points discussed during the presentation
  - Emphasizing the importance of ECC in securing the digital world
