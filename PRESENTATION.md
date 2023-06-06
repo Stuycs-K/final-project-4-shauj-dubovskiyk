@@ -117,7 +117,7 @@
  1 | _ | Decide on parameter G privately(RSA, etc.) | _
  2 | Private key: A | _ | Private key: B
  3 | Public key: A * G | (* here is point multiplication, it's still very hard for bad actors to get A or B) |Public key: B * G
- 4 | _ | Exchange public keys and multiply keys by their own private keys | _ 
+ 4 | _ | Exchange public keys(open their trapdoors) and multiply keys by their own private keys | _ 
  5 | Shared encrypt/decrypt key:    A * (B * G)	| _ | Shared encrypt/decrypt key:     B * (A * G)
  - Hackers may intercept public keys but difficult to determine private keys
  
